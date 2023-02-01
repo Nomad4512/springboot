@@ -1,5 +1,5 @@
-package com.example.springboot.web.web;
-import com.example.springboot.web.web.dto.HelloResponseDto;
+package com.example.springboot.web;
+import com.example.springboot.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     @GetMapping("/hello")
-    public String Hello(){
+    public String hello(){
+
         return "hello";
     }
 
